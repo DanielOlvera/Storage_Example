@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -8,10 +8,51 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context="com.example.daniel.storage_example.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+        android:text="Hello Storage!" />
+
+    <Button
+        android:id="@+id/m_sharedPrefs"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SharedPreferences"
+        android:onClick="wSharedPrefs"/>
+
+    <Button
+        android:id="@+id/m_intrStorage"
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Internal Storage"
+        android:onClick="wInternalStrg"/>
+
+    <Button
+        android:id="@+id/m_extStorage"
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="External Storage"
+        android:onClick="wExternalStrg"/>
+
+    <Button
+        android:id="@+id/m_sqliteDB"
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SQLite DB"
+        android:onClick="wSQLiteDB"/>
+
+    <Button
+        android:id="@+id/m_netwrkConnct"
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Network Connection / Cloud / Remote Server"
+        android:onClick="wNetworkConnection"/>
+</LinearLayout>
