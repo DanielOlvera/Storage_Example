@@ -10,4 +10,10 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.daniel.storage_example.withSharedPreferences.WithSharedPreferences">
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Saved Preferences"
+        android:onClick="doShowSP"/>
+
 </RelativeLayout>

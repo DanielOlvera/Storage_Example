@@ -1,8 +1,11 @@
 package com.example.daniel.storage_example;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.daniel.storage_example.withSharedPreferences.WithSharedPreferences;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void wSharedPrefs(View view) {
+        Intent intent = new Intent(getApplicationContext(), WithSharedPreferences.class);
+        startActivity(intent);
     }
 
     public void wInternalStrg(View view) {

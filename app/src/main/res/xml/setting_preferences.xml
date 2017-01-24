@@ -1,4 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:key="op_name"
+        android:title="Preferred name"
+        android:summary="Name that will appear in the welcome screen"
+        android:dialogTitle="Type your name"
+         />
+
+    <CheckBoxPreference
+        android:key="chkbx_value"
+        android:title="Checkbox value"
+        android:defaultValue="false"
+        android:summary="Anything"/>
+
+    <PreferenceCategory
+        android:key="pref_category"
+        android:title="Change color">
+
+        <ListPreference
+            android:key="color_list"
+            android:title="Color List"
+            android:summary="Select a color to display"
+            android:entries="@array/colours"
+            android:entryValues="@array/code_colours">
+
+        </ListPreference>
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
