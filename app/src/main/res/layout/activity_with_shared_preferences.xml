@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_with_shared_preferences"
     android:layout_width="match_parent"
@@ -8,12 +8,72 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context="com.example.daniel.storage_example.withSharedPreferences.WithSharedPreferences">
+
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Show Saved Preferences"
+        android:text="Show Saved Preferences First Try"
         android:onClick="doShowSP"/>
 
-</RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shared preferences Second Try - like Login"
+        android:layout_marginTop="35dp"
+        android:textSize="20dp"
+        android:layout_marginBottom="25dp"/>
+
+    <EditText
+        android:id="@+id/wsp_nameEdTXt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Write a name"/>
+
+    <EditText
+        android:id="@+id/wsp_userIdEdTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Write and ID"/>
+
+    <EditText
+        android:id="@+id/wsp_ageEdTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your age"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+        <Button
+            android:id="@+id/wsp_saveSPBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Save Preferences"
+            android:onClick="doSavePref"/>
+
+        <Button
+            android:id="@+id/wsp_showSPBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Saved Preferences"
+            android:onClick="doShowPref"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/wsp_goResultAct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result Activity"
+        android:onClick="goResultPref"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bottomMessage"/>
+
+
+</LinearLayout>

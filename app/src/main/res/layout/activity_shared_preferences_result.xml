@@ -10,4 +10,11 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.daniel.storage_example.withSharedPreferences.SharedPreferencesResultActivity">
 
+    <TextView
+        android:id="@+id/aspr_nameTxtVw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"/>
+
 </RelativeLayout>

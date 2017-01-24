@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Storage_Example</string>
+    <string name="bottomMessage">Go to second activity after have saved preferences</string>
 </resources>

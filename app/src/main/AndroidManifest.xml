@@ -19,7 +19,8 @@
             android:name=".withSharedPreferences.WithSharedPreferences"
             android:label="Shared Preferences"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".withSharedPreferences.SettingsActivity"></activity>
+        <activity android:name=".withSharedPreferences.SettingsActivity" />
+        <activity android:name=".withSharedPreferences.SharedPreferencesResultActivity"></activity>
     </application>
 
 </manifest>
