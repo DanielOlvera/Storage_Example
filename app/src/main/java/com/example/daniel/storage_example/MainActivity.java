@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.daniel.storage_example.withInternalStorage.InternalStorageActivity;
 import com.example.daniel.storage_example.withSharedPreferences.WithSharedPreferences;
 
 public class MainActivity extends AppCompatActivity {
@@ -21,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void wInternalStrg(View view) {
+        Intent intent = new Intent(getApplicationContext(), InternalStorageActivity.class);
+        startActivity(intent);
     }
 
     public void wExternalStrg(View view) {

@@ -20,7 +20,10 @@
             android:label="Shared Preferences"
             android:parentActivityName=".MainActivity" />
         <activity android:name=".withSharedPreferences.SettingsActivity" />
-        <activity android:name=".withSharedPreferences.SharedPreferencesResultActivity"></activity>
+        <activity android:name=".withSharedPreferences.SharedPreferencesResultActivity" />
+        <activity
+            android:name=".withInternalStorage.InternalStorageActivity"
+            ></activity>
     </application>
 
 </manifest>

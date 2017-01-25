@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_internal_storage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.daniel.storage_example.withInternalStorage.InternalStorageActivity">
+
+    <EditText
+        android:id="@+id/ais_userID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="User"/>
+
+    <EditText
+        android:id="@+id/ais_cellPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberPassword"
+        android:hint="Cellphone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/ais_saveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:onClick="doSave"/>
+        <Button
+            android:id="@+id/ais_loadInfoBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Load"
+            android:onClick="doLoad"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ais_userTxtVw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="#user"
+        android:textSize="40dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
